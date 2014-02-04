@@ -6,6 +6,10 @@ public class UserImpl implements UserDAO {
 
 	private ArrayList<User> users = new ArrayList<User>();
 	
+	public void init(){
+		System.out.println("Bean User Init");
+	}
+	
 	public void addUser(User user) {
 		user.setId(new Long(users.size() + 1));
 		users.add(user);
