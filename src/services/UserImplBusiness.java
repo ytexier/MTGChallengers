@@ -9,7 +9,6 @@ public class UserImplBusiness implements UserBusiness {
 
 	private UserDAO dao;
 	
-
 	public void addUser(User user) {
 		dao.addUser(user);
 	}
